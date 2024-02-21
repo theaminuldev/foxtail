@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
-		<footer className="relative z-10 bg-white dark:bg-dark pt-20 pt-[500px] pb-10">
-			<div className="container mx-auto">
+		<footer className="relative z-10 bg-white dark:bg-dark pt-20 pb-10">
+			<div className=" max-w-7xl mx-auto">
 				<div className="flex flex-wrap -mx-4">
 					<div className="w-full px-4 sm:w-2/3 lg:w-3/12">
 						<div className="w-full mb-10">
