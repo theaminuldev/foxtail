@@ -1,5 +1,5 @@
 # React + Vite
 
-Demo link Clone : https://blog.mozilla.org/en/
+Demo link Clone : https://blog.mozilla.org/en/  and  https://wptavern.com/
 Open Source Context this template
-initial
+Data : https://wptavern.com/wp-json/wp/v2/posts/
