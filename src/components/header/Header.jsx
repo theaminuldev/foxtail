@@ -5,7 +5,7 @@ export default function Header() {
 		<>
 			<header className="bg-white">
 				<nav
-					className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+					className="mx-auto flex container items-center justify-between p-6 lg:px-4"
 					aria-label="Global"
 				>
 					<div className="flex lg:flex-1">
@@ -70,7 +70,7 @@ export default function Header() {
 								From: "opacity-100 translate-y-0"
 								To: "opacity-0 translate-y-1"
 							--> */}
-							<div className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded bg-white shadow-lg ring-1 ring-gray-900/5">
+							<div className="absolute -left-8 top-full z-20 mt-3 w-screen max-w-md overflow-hidden rounded bg-white shadow-lg ring-1 ring-gray-900/5">
 								<div className="p-4">
 									<div className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
 										<div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
