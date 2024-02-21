@@ -1,4 +1,4 @@
-# React + Vite
+# Foxtail
 
 Demo link Clone : https://blog.mozilla.org/en/  and  https://wptavern.com/ <br>
 Open Source Context this template <br>
