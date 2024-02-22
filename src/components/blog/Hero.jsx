@@ -1,6 +1,6 @@
 export default function Hero() {
 	return (
-		<div className="relative flex max-w-7xl flex-col items-center mx-auto lg:flex-row-reverse lg:mt-12">
+		<div className="relative flex container flex-col items-center mx-auto lg:flex-row-reverse lg:mt-12 px-4">
 			<div className="w-full h-64 lg:w-1/2 lg:h-auto">
 				<img
 					className="h-full w-full object-cover"
@@ -9,7 +9,7 @@ export default function Hero() {
 				/>
 			</div>
 
-			<div className="max-w-lg bg-white md:max-w-3xl rounded md:z-10 md:shadow-lg md:absolute md:top-0 md:mt-48 lg:w-3/5 lg:left-0 lg:mt-20 xl:mt-24">
+			<div className=" bg-white  rounded md:z-10 md:shadow-lg md:absolute top-[50%] translate-y-[-50%] lg:w-3/5 lg:left-0 ">
 				<div className="flex flex-col p-12 md:px-16">
 					<a className="group inline-block mb-2" href="#">
 						<span className="border-b-2 border-black text-xl font-medium">
