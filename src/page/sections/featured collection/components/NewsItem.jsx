@@ -1,4 +1,8 @@
-const NewsItem = ({ title = "Add news Title", url = "Put news url" }) => {
+const NewsItem = ({
+  title = "Add news Title",
+  url = "#",
+  imageUrl = "https://via.placeholder.com/126x126",
+}) => {
   return (
     <article>
       <a
@@ -7,7 +11,7 @@ const NewsItem = ({ title = "Add news Title", url = "Put news url" }) => {
       >
         <div>
           <img
-            src="https://via.placeholder.com/126x126"
+            src={imageUrl}
             alt="Placeholder"
             className="max-w-[150px] max-h-[150px] object-cover rounded"
           />
