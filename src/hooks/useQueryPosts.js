@@ -11,7 +11,7 @@ const useQueryPosts = () => {
 				//TODO -- shouldUpdateData is not working correctly . this updated time set localStorage. get it form localstorage chekk it lastUpdateTime and update lastUpdateTime set localStorage 
 				if (response.data.length === 0 || shouldUpdateData()) {
 					// If no data exists in JSON Server or it's time to update, fetch from API and update JSON Server
-					const apiResponse = await axios.get('https://wptavern.com/wp-json/wp/v2/posts/154268');
+					const apiResponse = await axios.get('https://wptavern.com/wp-json/wp/v2/posts/');
 					const newData = apiResponse.data;
 					await axios.post('http://localhost:8000/posts', newData);
 					// TODO -- more working here setPostData 
