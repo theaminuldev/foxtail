@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "server": "json-server -p 8000 --no-cors server/db.json",
+    "server": "json-server -p 8000 --watch server/db.json",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "axios": "^1.6.7",
-	"json-server": "^0.17.4",
+    "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
