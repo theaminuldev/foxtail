@@ -1,10 +1,11 @@
+import heroImage from "../../assets/images/hero-image.jpg";
 export default function Hero() {
 	return (
 		<div className="relative flex container flex-col items-center mx-auto lg:flex-row-reverse lg:mt-12 px-4">
 			<div className="w-full h-64 lg:w-1/2 lg:h-auto">
 				<img
 					className="h-full w-full object-cover"
-					src="https://picsum.photos/id/1018/2000"
+					src={heroImage}
 					alt="Winding mountain road"
 				/>
 			</div>
