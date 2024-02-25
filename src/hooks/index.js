@@ -1,5 +1,10 @@
+import useQueryCategories from "./useQueryCategories";
 import useQueryPosts from "./useQueryPosts";
+import useQueryTags from "./useQueryTags";
 
 export {
-	useQueryPosts
+	useQueryCategories,
+	useQueryPosts,
+	useQueryTags
 };
+

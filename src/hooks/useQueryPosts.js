@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
  */
 const useQueryPosts = () => {
 	const [postData, setPostData] = useState(null);
+	const [error, setError] = useState(null);
 	const lastUpdateTime = localStorage.getItem('lastUpdateTime');
 	useEffect(() => {
 		/**
@@ -21,7 +22,11 @@ const useQueryPosts = () => {
 			try {
 				const response = await axios.get('http://localhost:8000/posts');
 				if (response.data.length === 0 || shouldUpdateData()) {
-					const apiResponse = await axios.get('https://wptavern.com/wp-json/wp/v2/posts/');
+					const apiResponse = await axios.get('https://wptavern.com/wp-json/wp/v2/posts/', {
+						params: {
+							per_page: 100,
+						}
+					});
 					const newData = apiResponse.data;
 					for (const property in newData) {
 						const newResponse = {
@@ -47,7 +52,12 @@ const useQueryPosts = () => {
 					setPostData(response.data);
 				}
 			} catch (error) {
-				console.error('Error fetching data:', error);
+				if (error.response) {
+					setError(error.response.data.message);
+				} else {
+					setError(error.message);
+				}
+
 			}
 		};
 
@@ -72,7 +82,7 @@ const useQueryPosts = () => {
 		return () => clearInterval(interval);
 	}, [lastUpdateTime]);
 
-	return postData;
+	return { postData, error };
 };
 
 export default useQueryPosts;

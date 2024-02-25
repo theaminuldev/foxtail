@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 import { useQueryPosts } from "./hooks";
 
 function App() {
-	const postData = useQueryPosts();
+	const { postData, error } = useQueryPosts();
 	return (
 		<>
 			<Header />
